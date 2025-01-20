@@ -22,7 +22,7 @@ The project is designed to be user-friendly, visually appealing, and easily main
 ## Project Structure
 
 ```
-hotel-spa/
+Hotel-SPA-Group-CS-with-REACT/
 ├── public/
 ├── src/
 │   ├── components/

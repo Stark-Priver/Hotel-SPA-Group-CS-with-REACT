@@ -43,7 +43,7 @@ hotel-spa/
    ```
 2. Navigate to the project directory:
    ```bash
-   cd hotel-spa
+   cd Hotel-SPA-Group-CS-with-REACT
    ```
 3. Install dependencies:
    ```bash

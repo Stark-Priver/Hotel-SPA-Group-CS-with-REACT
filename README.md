@@ -39,7 +39,7 @@ hotel-spa/
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Stark-Priver/Hotel-SPA-Group-CS-with-REACT
    ```
 2. Navigate to the project directory:
    ```bash

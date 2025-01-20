@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import About from "./components/About";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
@@ -9,12 +9,12 @@ import Testimonials from "./components/Testimonials";
 function HomeContents() {
   return (
     <div>
-      <About />
-      <Home />
       <Navigation />
-      <Footer />
+      <Home />
+      <About />
       <Services />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

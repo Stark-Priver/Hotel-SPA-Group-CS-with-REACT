@@ -26,10 +26,10 @@ Hotel-SPA-Group-CS-with-REACT/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── Header.js
-│   │   ├── Navigation.js
-│   │   ├── MainContent.js
-│   │   ├── Footer.js
+│   │   ├── Header.jsx
+│   │   ├── Navigation.jsx
+│   │   ├── MainContent.jsx
+│   │   ├── Footer.jsx
 │   ├── App.js
 │   ├── App.css
 │   ├── index.js

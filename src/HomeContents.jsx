@@ -1,18 +1,22 @@
-import React from 'react'
-import Navigation from './components/Navigation'
-import Testimonials from './components/Testimonials'
-import Services from './components/Services'
-import Footer from './components/Footer'
+import React from "react";
+import Navigation from "./components/Navigation";
+import Testimonials from "./components/Testimonials";
+import Services from "./components/Services";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 function HomeContents() {
   return (
     <div>
       <Navigation />
-      <Testimonials />
+      <Home />
+      <About />
       <Services />
-      <Footer />  
+      <Testimonials />
+      <Footer />
     </div>
   );
 }
 
-export default HomeContents
+export default HomeContents;

@@ -1,0 +1,128 @@
+/* General navbar styles with glassmorphism */
+.navigation {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  color: violet;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for all nav elements */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo styles */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(79, 31, 143); /* Logo color */
+}
+
+/* Toggle button styles for mobile */
+.nav-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(89, 40, 117);
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Navigation list styles */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: rgb(79, 31, 143);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #ffd700;
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Theme dropdown */
+.theme-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1100; /* Ensure it's above other content */
+}
+
+.theme-dropdown.show {
+  display: flex; /* Show when dropdown is open */
+}
+
+.theme-dropdown button {
+  background: none;
+  border: none;
+  color: rgb(79, 31, 143);
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: left;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-dropdown button:hover {
+  color: #ffd700;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show the toggle button on smaller screens */
+  }
+
+  .nav-list {
+    display: none; /* Hide the navigation list by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list.open {
+    display: flex; /* Show the navigation list when toggle is clicked */
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+}

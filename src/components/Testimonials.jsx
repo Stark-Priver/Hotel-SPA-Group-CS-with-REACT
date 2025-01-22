@@ -1,31 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import "./Testimonials.css";
 
-function Testimonials() {
-  const [testimonials, setTestimonials] = useState([]);
+// Helper function to generate star rating
+const getStars = (rating) => {
+  const stars = [];
+  for (let i = 0; i < 5; i++) {
+    stars.push(i < rating ? "★" : "☆"); // Filled star if i < rating, otherwise empty star
+  }
+  return stars.join(" ");
+};
 
-  useEffect(() => {
-    const fetchedTestimonials = [
-      {
-        id: 1,
-        name: "Lazaro Baltazary",
-        text: "Great Services and cozy rooms!",
-      },
-      { id: 2, name: "Angel Marcel", text: "Loved the food and ambiance!" },
-      { id: 3, name: "Jetri HuHaa", text: "Will definitely come back!" },
-    ];
-    setTestimonials(fetchedTestimonials);
-  }, []);
-
+function Testimonials({ testimonials }) {
   return (
-    <div>
+    <div className="testimonials-container">
       <h1>What Our Customers Say</h1>
-      <ul>
+      <div className="testimonials-grid">
         {testimonials.map((testimonial) => (
-          <li key={testimonial.id}>
-            <strong>{testimonial.name}:</strong> {testimonial.text}
-          </li>
+          <div key={testimonial.id} className="testimonial-card">
+            <div className="testimonial-header">
+              <strong>{testimonial.name}</strong>
+              <div className="testimonial-rating">
+                {getStars(testimonial.rating)}{" "}
+                {/* Display stars based on the rating */}
+              </div>
+            </div>
+            <p>{testimonial.text}</p>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

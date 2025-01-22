@@ -49,9 +49,12 @@ Hotel-SPA-Group-CS-with-REACT/
    ```bash
    npm install
    ```
+    ```bash
+   npm install react-router-dom
+   ```
 4. Run the application:
    ```bash
-   npm start
+   npm run dev
    ```
 5. Open your browser and navigate to `http://localhost:3000` to view the webpage.
 

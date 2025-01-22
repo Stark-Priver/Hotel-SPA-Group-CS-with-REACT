@@ -1,0 +1,61 @@
+/* General styles for header */
+.header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.header h1 {
+  color: #4f1f8f;
+  font-size: 2.5rem;
+}
+
+.header p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Container to hold all the service cards */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 1.5rem; /* Space between the cards */
+  padding: 2rem;
+}
+
+/* Individual card styling */
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Hover effect for each service card */
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styles inside each card */
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Service title and description */
+.service-info {
+  padding: 1rem;
+}
+
+.service-info h3 {
+  font-size: 1.5rem;
+  color: #4f1f8f;
+  margin-bottom: 0.5rem;
+}
+
+.service-info p {
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,0 +1,55 @@
+/* Container for the testimonials section */
+.testimonials-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title styling */
+.testimonials-container h1 {
+  font-size: 2.5rem;
+  color: #4f1f8f;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid for the testimonial cards */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 cards per row, responsive */
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for testimonial cards */
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header section inside the card */
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Rating stars */
+.testimonial-rating {
+  font-size: 1.25rem;
+  color: gold;
+}
+
+/* Text inside the card */
+.testimonial-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

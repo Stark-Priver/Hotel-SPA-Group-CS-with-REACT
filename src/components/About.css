@@ -1,0 +1,123 @@
+/* Basic Styling */
+.about-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hotel-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Team section - layout */
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Team Member Card */
+.team-member-card {
+  width: 30%; /* Three cards per row for larger screens */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effect on Card */
+.team-member-card:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Image Styling */
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid #ccc;
+  transition: opacity 0.3s ease;
+}
+
+/* Info Section Inside Card */
+.team-info {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth fade in */
+  z-index: 1;
+}
+
+.team-member-card:hover .team-info {
+  opacity: 1; /* Show info on hover */
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  display: none; /* Hide bio by default */
+}
+
+/* Show bio when the card is hovered */
+.team-member-card:hover .bio {
+  display: block;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  /* Change the layout to a column and full width */
+  .team-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Make each team member card take full width */
+  .team-member-card {
+    width: 80%; /* Adjust to full width on mobile */
+    margin-bottom: 2rem; /* Add space between cards */
+  }
+
+  /* Adjust the image to fit better in smaller screens */
+  .team-photo {
+    height: 250px; /* Adjust the height for mobile view */
+  }
+
+  /* Make team info always visible on mobile */
+  .team-info {
+    opacity: 1; /* Show info without hover effect */
+    position: relative; /* Change to static position for visibility */
+    display: block; /* Make the info block visible */
+  }
+
+  /* Adjust text and bio visibility */
+  .bio {
+    display: block; /* Always show the bio on mobile */
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,122 @@
+/* General navbar styles with glassmorphism */
+.navigation {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.467); /* Subtle border */
+  color: violet;
+  padding: 1rem 2rem; /* Adjusted left and right padding */
+
+  align-items: center;
+  position: fixed;
+  top: 0;
+  align-self: center;
+  width: 95%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s; /* Smooth transition for top property */
+}
+
+/* Dark theme navbar */
+body.dark .navigation {
+  background: rgba(18, 18, 18, 0.8); /* Dark background */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Lighter border in dark mode */
+}
+
+body.dark .nav-item a {
+  color: #fff; /* White text for dark mode */
+}
+
+body.dark .nav-item a:hover {
+  color: #ffd700; /* Golden hover effect */
+}
+
+/* Light theme navbar */
+body.light .navigation {
+  background: rgba(255, 255, 255, 0.8); /* Light background */
+  border: 1px solid rgba(255, 255, 255, 0.8); /* Subtle border for light mode */
+}
+
+body.light .nav-item a {
+  color: rgb(79, 31, 143); /* Purple text for light mode */
+}
+
+body.light .nav-item a:hover {
+  color: #ffd700; /* Golden hover effect */
+}
+
+/* Container for all nav elements */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav items */
+  width: 100%;
+}
+
+/* Logo styles */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(79, 31, 143); /* Logo color */
+  flex-grow: 1; /* Allow the logo to take the available space */
+}
+
+/* Toggle button styles for mobile */
+.nav-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(89, 40, 117);
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Navigation list styles */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem; /* Adjust gap between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a:hover {
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    
+  .nav-toggle {
+    display: block; /* Show the toggle button on smaller screens */
+  }
+
+  .nav-list {
+    display: none; /* Hide the navigation list by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(15, 11, 11, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 25%;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Increased z-index to ensure it is above all other elements */
+  }
+
+  .nav-list.open {
+    display: flex; /* Show the navigation list when toggle is clicked */
+  }
+
+  .nav-item {
+    margin: 0.25rem 0;
+  }
+}

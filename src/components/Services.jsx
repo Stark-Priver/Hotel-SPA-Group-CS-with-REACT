@@ -5,33 +5,33 @@ import "./Services.css";
 const services = [
   {
     title: "Food",
-    image: "src/assets/food.jpg",
+    image: "/assets/food.jpg",
     description:
       "Enjoy our food which is delicious and contains more nutrients.",
   },
   {
     title: "Accommodation",
-    image: "src/assets/accomodation2.jpg",
+    image: "/assets/accomodation2.jpg",
     description: "Relax in our luxurious and comfortable rooms.",
   },
   {
     title: "Conference",
-    image: "src/assets/conference.jpg",
+    image: "/assets/conference.jpg",
     description: "Host professional events in our fully-equipped halls.",
   },
   {
     title: "Spa",
-    image: "src/assets/SPA.jpg",
+    image: "/assets/SPA.jpg",
     description: "Rejuvenate with our relaxing spa treatment.",
   },
   {
     title: "Pool",
-    image: "src/assets/pool1.jpg",
+    image: "/assets/pool1.jpg",
     description: "Take a refreshing dip in our crystal-clear pool.",
   },
   {
     title: "Gym",
-    image: "src/assets/gym.jpg",
+    image: "/assets/gym.jpg",
     description: "Stay fit with our state-of-the-art gym equipment.",
   },
 ];

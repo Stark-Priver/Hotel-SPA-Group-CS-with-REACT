@@ -27,21 +27,21 @@ export const hotelInfo = {
 export const ceoInfo = {
   name: "Privertus Cosmas",
   role: "Chief Executive Officer",
-  photo: "src/assets/Team/download.jpeg",
+  photo: "/assets/Team/download.jpeg",
   bio: "Priver has over 20 years of experience in the hospitality industry, driving innovation and excellence. Under his leadership, the hotel has earned numerous accolades for outstanding service.",
 };
 
 export const managerInfo = {
   name: "Angel Mbaga",
   role: "General Manager",
-  photo: "src/assets/Team/female.jpeg",
+  photo: "/assets/Team/female.jpeg",
   bio: "Angel is dedicated to ensuring every guest’s stay is perfect. With her attention to detail and passion for hospitality, she leads the team to deliver top-notch experiences.",
 };
 
 export const salesManagerInfo = {
   name: "Musa Chacha",
   role: "Sales Manager",
-  photo: "src/assets/Team/male.jpeg",
+  photo: "/assets/Team/male.jpeg",
   bio: "Musa specializes in developing strong client relationships and driving revenue growth. His expertise in sales strategies has contributed significantly to the hotel's success.",
 };
 

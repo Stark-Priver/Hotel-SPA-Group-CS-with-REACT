@@ -1,14 +1,14 @@
 export const hotelImages = [
   {
-    photo: "src/assets/accomodation2.jpg", // Imported luxury hotel exterior image
+    photo: "/assets/accomodation2.jpg", // Imported luxury hotel exterior image
     text: "Experience Luxury Like Never Before",
   },
   {
-    photo: "src/assets/pool2.jpg", // Imported luxury hotel suite image
+    photo: "/assets/pool2.jpg", // Imported luxury hotel suite image
     text: "Relax in Our Beautiful Suites",
   },
   {
-    photo: "src/assets/accomodation2.jpg", // Using pool image again
+    photo: "/assets/accomodation2.jpg", // Using pool image again
     text: "Enjoy World-Class Amenities",
   },
 ];
